@@ -15,6 +15,7 @@
 		F8DAC9F414D73B960015368E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DAC9F314D73B960015368E /* AppDelegate.m */; };
 		F8DAC9F714D73B960015368E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DAC9F514D73B960015368E /* MainStoryboard.storyboard */; };
 		F8DAC9FA14D73B960015368E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DAC9F914D73B960015368E /* ViewController.m */; };
+		F8DACA0214D73BFE0015368E /* Shot.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DACA0114D73BFE0015368E /* Shot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +23,17 @@
 		F8DAC9E314D73B960015368E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F8DAC9E514D73B960015368E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F8DAC9E714D73B960015368E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F8DAC9EB14D73B960015368E /* DoD-Info.plist */ = {isa = PBXFileReference; path = "DoD-Info.plist"; sourceTree = "<group>"; };
+		F8DAC9EB14D73B960015368E /* DoD-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DoD-Info.plist"; sourceTree = "<group>"; };
 		F8DAC9ED14D73B960015368E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F8DAC9EF14D73B960015368E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F8DAC9F114D73B960015368E /* DoD-Prefix.pch */ = {isa = PBXFileReference; path = "DoD-Prefix.pch"; sourceTree = "<group>"; };
-		F8DAC9F214D73B960015368E /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		F8DAC9F114D73B960015368E /* DoD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DoD-Prefix.pch"; sourceTree = "<group>"; };
+		F8DAC9F214D73B960015368E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F8DAC9F314D73B960015368E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F8DAC9F614D73B960015368E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		F8DAC9F814D73B960015368E /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		F8DAC9F814D73B960015368E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F8DAC9F914D73B960015368E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F8DACA0014D73BFE0015368E /* Shot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shot.h; sourceTree = "<group>"; };
+		F8DACA0114D73BFE0015368E /* Shot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 				F8DAC9F514D73B960015368E /* MainStoryboard.storyboard */,
 				F8DAC9F814D73B960015368E /* ViewController.h */,
 				F8DAC9F914D73B960015368E /* ViewController.m */,
+				F8DACA0014D73BFE0015368E /* Shot.h */,
+				F8DACA0114D73BFE0015368E /* Shot.m */,
 				F8DAC9EA14D73B960015368E /* Supporting Files */,
 			);
 			path = DoD;
@@ -163,6 +168,7 @@
 				F8DAC9F014D73B960015368E /* main.m in Sources */,
 				F8DAC9F414D73B960015368E /* AppDelegate.m in Sources */,
 				F8DAC9FA14D73B960015368E /* ViewController.m in Sources */,
+				F8DACA0214D73BFE0015368E /* Shot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
