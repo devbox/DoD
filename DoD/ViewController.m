@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 //das ist ein erster Kommentar von reen
+//das ist ein erster Kommentar von nescher
 
 #import "ViewController.h"
 #import "AppDelegate.h"
