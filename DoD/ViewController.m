@@ -25,13 +25,6 @@
 @synthesize choosenValveOutlet2;
 @synthesize choosenValveOutlet3;
 
-/*
-int firstShotValve = 1;
-int secondShotValve = 1;
-int thirdShotValve = 1;
-
-NSString *delay1;
-*/
 
 //Bei Enter wird die Tastatur ausgeblendet------------------------
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
@@ -46,19 +39,11 @@ NSString *delay1;
 }
 //----------------------------------------------------------------
 
-//Beim verlassen eines Textfeldes wird der Wert auf der Console ausgeben
+//Beim verlassen eines Textfeldes
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
-    /*
-    NSLog(@"Delay 1 ist: %@", self.UiTextDelay1.text);
-    NSLog(@"Delay 2 ist: %@", self.UiTextDelay2.text);
-    NSLog(@"Delay 3 ist: %@", self.UiTextDelay3.text);
-    NSLog(@"%i", choosenValveOutlet1.selectedSegmentIndex);
-    
-    //delay1 = self.UiTextDelay1.text;
-    */
-}
-//-----------------------------------------------------------------------
+   }
+//-------------------------------
 
 
 - (void)didReceiveMemoryWarning
@@ -130,36 +115,16 @@ NSString *delay1;
     
 }
 
-/*
-//----------------------------------------------------------------------------
-
-//Auslesen des Wertes der Buttons-----------------------------------------
-
-- (IBAction)choosenValve1:(id)sender {
-
-}
-
-//------------------------------------------------------------------------
-
-- (IBAction)choosenValve2:(id)sender {
-    }
-
-//- (IBAction)choosenValve3:(id)sender {
-  // }
- */
-
 - (IBAction)Start:(id)sender {
     
-    Shot *shot1 = [[Shot alloc] initWithValveId:choosenValveOutlet1.selectedSegmentIndex+1 valveDelay:[self.UiTextDelay1.text intValue] valveOpenTime:[self.UiTextOpenTime1.text intValue]];
-    Shot *shot2 = [[Shot alloc] initWithValveId:choosenValveOutlet2.selectedSegmentIndex+1 valveDelay:[self.UiTextDelay2.text intValue] valveOpenTime:[self.UiTextOpenTime2.text intValue]];
-    Shot *shot3 = [[Shot alloc] initWithValveId:choosenValveOutlet3.selectedSegmentIndex+1 valveDelay:[self.UiTextDelay3.text intValue] valveOpenTime:[self.UiTextOpenTime3.text intValue]];
+    Shot *shot1 = [Shot shotWithValveId:choosenValveOutlet1.selectedSegmentIndex+1 valveDelay:[self.UiTextDelay1.text intValue] valveOpenTime:[self.UiTextOpenTime1.text intValue]];
+    Shot *shot2 = [Shot shotWithValveId:choosenValveOutlet2.selectedSegmentIndex+1 valveDelay:[self.UiTextDelay2.text intValue] valveOpenTime:[self.UiTextOpenTime2.text intValue]];
+    Shot *shot3 = [Shot shotWithValveId:choosenValveOutlet3.selectedSegmentIndex+1 valveDelay:[self.UiTextDelay3.text intValue] valveOpenTime:[self.UiTextOpenTime3.text intValue]];
     
     //NSLog(@"Es wird Ventil%i ausgelöst nach %ims Ventil%i, dann Ventil%i", shot1.valveId ,shot1.valveDelay , shot2.valveId, shot3.valveId);
     NSLog(@"%i", shot1.uebergabeWert);
     NSLog(@"%i", shot2.uebergabeWert);
     NSLog(@"%i", shot3.uebergabeWert);
-    
-    
 }
 
 
