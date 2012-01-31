@@ -31,7 +31,7 @@
 +(id)shotWithValveId: (int) vi valveDelay: (int) vd valveOpenTime: (int) vo
 {
     return[[Shot alloc] initWithValveId: (int) vi valveDelay: (int) vd valveOpenTime: (int) vo];
-    NSLog(@"Es wird Ventil%i %ims lang ausgelöst. Nach %ims ehts weiter.", vi, vo, vd);
+    NSLog(@"Es wird Ventil%i %ims lang ausgelöst. Nach %ims gehts weiter.", vi, vo, vd);
 }
 
 

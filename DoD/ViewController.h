@@ -34,13 +34,13 @@
 
 @property (strong, nonatomic) IBOutlet UISegmentedControl *choosenValveOutlet3;
 
-
+/*
 - (IBAction)choosenValve1:(id)sender;
 
 - (IBAction)choosenValve2:(id)sender;
 
 - (IBAction)choosenValve3:(id)sender;
-
+*/
 - (IBAction)Start:(id)sender;
 
 @end

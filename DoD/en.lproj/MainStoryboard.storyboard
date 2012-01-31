@@ -67,9 +67,6 @@
                                     <segment title="V2"/>
                                     <segment title="V3"/>
                                 </segments>
-                                <connections>
-                                    <action selector="choosenValve1:" destination="2" eventType="valueChanged" id="O8C-S7-kYy"/>
-                                </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="Ff5-8S-Jdq">
                                 <rect key="frame" x="25" y="150" width="129" height="44"/>
@@ -80,9 +77,6 @@
                                     <segment title="V3"/>
                                     <segment title="no"/>
                                 </segments>
-                                <connections>
-                                    <action selector="choosenValve2:" destination="2" eventType="valueChanged" id="ycF-9Z-35E"/>
-                                </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="4v3-e3-8uS">
                                 <rect key="frame" x="25" y="220" width="129" height="44"/>
@@ -93,9 +87,6 @@
                                     <segment title="V3"/>
                                     <segment title="no"/>
                                 </segments>
-                                <connections>
-                                    <action selector="choosenValve3:" destination="2" eventType="valueChanged" id="no2-Yf-zt9"/>
-                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FJh-7c-LvP">
                                 <rect key="frame" x="101" y="365" width="118" height="36"/>
@@ -240,27 +231,6 @@
             <point key="canvasLocation" x="63" y="23"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="Start:"/>
-                <relationship kind="action" name="backButton:"/>
-                <relationship kind="action" name="choosenValve1:"/>
-                <relationship kind="action" name="choosenValve2:"/>
-                <relationship kind="action" name="choosenValve3:"/>
-                <relationship kind="outlet" name="UiTextDelay1" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="UiTextDelay2" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="UiTextDelay3" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="UiTextOpenTime1" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="UiTextOpenTime2" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="UiTextOpenTime3" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="choosenValveOutlet1" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="choosenValveOutlet2" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="choosenValveOutlet3" candidateClass="UISegmentedControl"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
